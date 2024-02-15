@@ -1,0 +1,26 @@
+
+
+h1 {
+    color:rgb(155, 16, 155);
+    padding-left: 30px;
+}
+
+.navbar {
+    border-radius: 20px;
+    margin: 10px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+.i1 {
+    margin-right: 20px;
+}
+
+
+.list-group {
+    margin-top: 20px;
+    display: flex;
+}
+

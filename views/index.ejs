@@ -1,0 +1,23 @@
+<%- include("./partials/header.ejs") %>
+
+
+<div class=" navbar nav-dark bg-dark">
+  <h1 class="text-primary">To Do</h1>
+</div>
+
+<div class="container">
+  <form action="/add/todo" method="post" class="d-flex">
+    <input type="text" class="i1 form-control bg-success text-light" placeholder="Todo" name="todo">
+    <input type="submit" value="Add ToDo" class="btn btn-lg btn-primary ">
+  </form>
+
+
+<ul class="list-group ">
+  <% todo.forEach(todos=>{ %>
+  <li class="list-group-item  "><%= todos.todo %> <a href="/delete/todo/<%= todos._id %>" style="margin-left: 100px;"  class="btn  btn-success">Delete</a></li>
+<% }) %>
+</ul>
+</div>
+
+ 
+<%- include("./partials/footer.ejs") %>
